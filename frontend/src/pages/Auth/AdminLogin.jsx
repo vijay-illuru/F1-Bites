@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import api from "../../utils/api";
 import f1 from "../../assets/f1.png";
@@ -115,15 +115,15 @@ function AdminLogin({ setIsAuthenticated }) {
 
           <p className="mt-6 text-gray-600 text-center text-sm">
             Don't have an admin account?{" "}
-            <a href="/admin/signup" className="text-amber-600 hover:underline font-semibold">
+            <Link to="/admin/signup" className="text-amber-600 hover:underline font-semibold">
               Register as Admin
-            </a>
+            </Link>
           </p>
           
           <p className="mt-2 text-gray-600 text-center text-sm">
-            <a href="/login" className="text-red-600 hover:underline">
+            <Link to="/login" className="text-red-600 hover:underline">
               ← Back to User Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>
