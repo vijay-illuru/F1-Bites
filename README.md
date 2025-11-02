@@ -9,11 +9,10 @@ A full-stack e-commerce application for F1 merchandise with user authentication,
 - **Frontend**: [Deployed on Render](https://f1-snacks-frontend.onrender.com) *(Update with your actual frontend URL)*
 - **Backend API**: [Deployed on Render](https://f1-snacks-backend.onrender.com) *(Update with your actual backend URL)*
 - **API Health Check**: [Test Products Endpoint](https://f1-snacks-backend.onrender.com/api/products)
-- **API Documentation**: See [API Endpoints](#api-endpoints) section below
 
 ## 📚 Documentation
 
-- **[Render Deployment Guide](./RENDER_CONFIGURATION.md)** - Complete guide for deploying to Render
+
 - **[GitHub Repository](https://github.com/vijay-illuru/F1-Bites.git)** - Source code repository
 
 ## Features
