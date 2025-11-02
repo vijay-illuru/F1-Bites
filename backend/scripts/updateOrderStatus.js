@@ -7,9 +7,9 @@ async function updateAllOrdersToDelivered() {
     await mongoose.connect(process.env.MONGO_URI);
     console.log("Connected to MongoDB");
 
-    // Update all pending orders to delivered
+    // Update all non-delivered orders to delivered
     const result = await Order.updateMany(
-      { status: "pending" },
+      { status: { $ne: "delivered" } },
       { status: "delivered" }
     );
 

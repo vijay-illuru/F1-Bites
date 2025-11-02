@@ -73,6 +73,7 @@ router.post("/", auth, async (req, res) => {
         totalAmount,
         customer,
         paymentMethod: paymentMethod || "Cash on Delivery",
+        status: "delivered", // Set all orders as delivered for now (will change after adding payment)
         estimatedDeliveryTime: new Date(Date.now() + 45 * 60 * 1000) // 45 minutes from now
       });
 
