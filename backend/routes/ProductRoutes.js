@@ -68,7 +68,7 @@ router.post("/", adminAuth, async (req, res) => {
 
     const product = new Product({
       name,
-      price,
+      price: Number(price),
       category,
       image,
       description,
@@ -97,8 +97,12 @@ router.patch("/:id", adminAuth, async (req, res) => {
       return res.status(400).json({ error: "Stock cannot be negative" });
     }
 
+    // Convert string numbers to actual numbers
+    if (updates.price !== undefined) updates.price = Number(updates.price);
+    
     // Auto-update availability based on stock
     if (updates.stock !== undefined) {
+      updates.stock = Number(updates.stock);
       updates.isAvailable = updates.stock > 0;
     }
 

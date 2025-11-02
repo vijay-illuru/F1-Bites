@@ -87,9 +87,13 @@ router.post("/", auth, async (req, res) => {
           throw new Error(`Insufficient stock for ${product.name}. Available: ${product.stock}`);
         }
 
+        const newStock = product.stock - item.quantity;
         await Product.findByIdAndUpdate(
           item.productId,
-          { $inc: { stock: -item.quantity } },
+          { 
+            $inc: { stock: -item.quantity },
+            $set: { isAvailable: newStock > 0 }
+          },
           { session }
         );
       }
