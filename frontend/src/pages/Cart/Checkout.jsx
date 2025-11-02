@@ -120,11 +120,12 @@ function Checkout() {
             </div>
 
             <div className="mt-8">
-              <a href="/" className="inline-block">
-                <button className="px-6 py-3 rounded-xl bg-red-500 text-white font-semibold shadow-sm hover:shadow-md hover:bg-red-600 transition">
-                  Continue Shopping
-                </button>
-              </a>
+              <button 
+                onClick={() => navigate("/")} 
+                className="px-6 py-3 rounded-xl bg-red-500 text-white font-semibold shadow-sm hover:shadow-md hover:bg-red-600 transition"
+              >
+                Continue Shopping
+              </button>
             </div>
           </div>
 
