@@ -2,6 +2,20 @@
 
 A full-stack e-commerce application for F1 merchandise with user authentication, shopping cart, order management, and admin dashboard.
 
+## 🌐 Live Demo
+
+> **Note**: Replace the placeholder URLs below with your actual Render deployment URLs
+
+- **Frontend**: [Deployed on Render](https://f1-snacks-frontend.onrender.com) *(Update with your actual frontend URL)*
+- **Backend API**: [Deployed on Render](https://f1-snacks-backend.onrender.com) *(Update with your actual backend URL)*
+- **API Health Check**: [Test Products Endpoint](https://f1-snacks-backend.onrender.com/api/products)
+- **API Documentation**: See [API Endpoints](#api-endpoints) section below
+
+## 📚 Documentation
+
+- **[Render Deployment Guide](./RENDER_CONFIGURATION.md)** - Complete guide for deploying to Render
+- **[GitHub Repository](https://github.com/vijay-illuru/F1-Bites.git)** - Source code repository
+
 ## Features
 
 - User authentication (signup, login)
@@ -42,7 +56,7 @@ A full-stack e-commerce application for F1 merchandise with user authentication,
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/vijay-illuru/F1-Bites.git
 cd f1-snacks
 ```
 
@@ -348,6 +362,56 @@ node scripts/makeAdmin.js <email>
 - Server validates env vars on startup
 - Missing required vars will prevent server start
 - Weak secrets show warnings in production
+
+## 🚀 Deployment
+
+This application is deployed on **Render**:
+
+- **Backend**: Web Service on Render
+- **Frontend**: Static Site on Render
+- **Database**: MongoDB Atlas
+
+### Deployment Resources
+
+- **[Render Dashboard](https://dashboard.render.com)** - Manage your deployments
+- **[MongoDB Atlas](https://www.mongodb.com/cloud/atlas)** - Cloud database
+- **[Render Documentation](https://render.com/docs)** - Render deployment guides
+
+### Deployment Guide
+
+See **[RENDER_CONFIGURATION.md](./RENDER_CONFIGURATION.md)** for complete deployment instructions including:
+- MongoDB Atlas setup
+- Backend deployment configuration
+- Frontend static site setup
+- Environment variables configuration
+- React Router SPA routing setup
+- Troubleshooting common issues
+
+## 🔗 Quick Links
+
+### Application Links
+- **Frontend Application**: [Live Demo](https://f1-snacks-frontend.onrender.com)
+- **Backend API**: [API Base URL](https://f1-snacks-backend.onrender.com/api)
+- **API Health Check**: [Products Endpoint](https://f1-snacks-backend.onrender.com/api/products)
+
+### Development Resources
+- **GitHub Repository**: [F1-Bites](https://github.com/vijay-illuru/F1-Bites.git)
+- **Render Dashboard**: [Dashboard](https://dashboard.render.com)
+- **MongoDB Atlas**: [Atlas Dashboard](https://cloud.mongodb.com)
+
+### Documentation
+- **Deployment Guide**: [RENDER_CONFIGURATION.md](./RENDER_CONFIGURATION.md)
+- **Render Docs**: [Static Sites](https://render.com/docs/static-sites)
+- **MongoDB Atlas Docs**: [Atlas Documentation](https://docs.atlas.mongodb.com)
+
+### Testing Links
+- **Frontend Routes**:
+  - [Home](https://f1-snacks-frontend.onrender.com/)
+  - [Login](https://f1-snacks-frontend.onrender.com/login)
+  - [Signup](https://f1-snacks-frontend.onrender.com/signup)
+  - [Cart](https://f1-snacks-frontend.onrender.com/cart)
+  - [Profile](https://f1-snacks-frontend.onrender.com/profile)
+  - [Admin Dashboard](https://f1-snacks-frontend.onrender.com/admin)
 
 ## License
 
